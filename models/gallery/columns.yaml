@@ -1,0 +1,18 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: stefan.imageuploadextended::lang.modeldata.name
+        searchable: true
+
+    published:
+        label: stefan.imageuploadextended::lang.modeldata.published
+        type: switch
+
+    created_at:
+        label: stefan.imageuploadextended::lang.modeldata.created
+
+    updated_at:
+        label: stefan.imageuploadextended::lang.modeldata.updated

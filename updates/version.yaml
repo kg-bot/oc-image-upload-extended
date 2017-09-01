@@ -1,0 +1,4 @@
+1.0.1: 'First version of ImageUploadExtended'
+1.0.2:
+    - 'Add tags column to system_files'
+    - migration102.php

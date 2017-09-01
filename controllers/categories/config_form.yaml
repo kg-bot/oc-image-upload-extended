@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/stefan/imageuploadextended/models/category/fields.yaml
+
+# Model Class name
+modelClass: Stefan\ImageUploadextended\Models\Category
+
+# Default redirect location
+defaultRedirect: stefan/imageuploadextended/categories
+
+# Create page
+create:
+    title: Create Category
+    redirect: stefan/imageuploadextended/categories/update/:id
+    redirectClose: stefan/imageuploadextended/categories
+
+# Update page
+update:
+    title: Edit Category
+    redirect: stefan/imageuploadextended/categories
+    redirectClose: stefan/imageuploadextended/categories
+
+# Preview page
+preview:
+    title: Preview Category

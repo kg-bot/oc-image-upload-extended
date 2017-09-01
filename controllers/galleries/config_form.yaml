@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: stefan.imageuploadextended::lang.idgallery.title
+
+# Model Form Field configuration
+form: $/stefan/imageuploadextended/models/gallery/fields.yaml
+
+# Model Class name
+modelClass: Stefan\ImageUploadextended\Models\Gallery
+
+# Default redirect location
+defaultRedirect: stefan/imageuploadextended/galleries
+
+# Create page
+create:
+    title: stefan.imageuploadextended::lang.form.create
+    redirect: stefan/imageuploadextended/galleries/update/:id
+    redirectClose: stefan/imageuploadextended/galleries
+
+# Update page
+update:
+    title: stefan.imageuploadextended::lang.form.update
+    redirect: stefan/imageuploadextended/galleries
+    redirectClose: stefan/imageuploadextended/galleries
+
+# Preview page
+preview:
+    title: stefan.imageuploadextended::lang.form.preview
