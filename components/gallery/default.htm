@@ -1,0 +1,51 @@
+{% put styles %}
+    <style>
+        #{{ __SELF__ }} div {
+            display: block;
+            float: left;
+            margin: 3px;
+        }
+    </style>
+{% endput %}
+
+<div style="width:100%" id="{{ __SELF__ }}">
+    {% for image in gallery.gallery_images %}
+        <div data-src="{{ image.photo_src|media }}" data-sub-html="<h4 style='color: white;'>{{ image.title }}</h4><p>{{ image.photo_tags }}</p>">
+            <a href="#">
+                <img class="img-responsive" src="{{ image.photo_src|media|resize(width, height) }}" alt="{{ image.title }}" />
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+{% put scripts %}
+    <script>
+         $(document).ready(function() {
+            var {{ __SELF__ }} = $("#{{ __SELF__ }}").lightGallery({
+                // Elements
+                thumbnail   : {{ thumbnail }},
+                caption     : {{ caption }},
+                desc        : {{ desc }},
+                counter     : {{ counter }},
+                controls    : {{ controls }}, 
+                preload     : {{ preload }},
+
+                // Transitions
+                mode   : '{{ mode }}',
+                useCSS : true,
+                easing : 'linear',
+                speed  : {{ speed }},
+
+                // Navigation
+                hideControlOnEnd : false,
+                loop             : {{ loop }},
+                auto             : {{ auto }},
+                pause            : {{ pause }},
+                escKey           : {{ escKey }},
+                swipeThreshold    : 50,
+
+                lang : { allPhotos: '{{ lang }}' },
+            });
+        });
+    </script>
+{% endput %}
