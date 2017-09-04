@@ -18,6 +18,17 @@ class ImageUpload extends FileUpload
      *   Methods used to extend default FileUpload form widget
      */
 
+<<<<<<< HEAD
+=======
+    /**
+     * @inheritDoc
+     */
+    public function render()
+    {
+        $this->prepareVars();
+        return $this->makePartial('imageupload');
+    }
+>>>>>>> 651edf6c355b93a2b550b00626e495a2383737de
 
 
     /**

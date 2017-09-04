@@ -2,6 +2,9 @@
 1.0.2:
     - 'Add tags column to system_files'
     - migration102.php
+<<<<<<< HEAD
 1.0.4: 
     - 'Added gallery_images column to ravir galleries table'
     - 2017_09_02_083310_add_gallery_images_to_raviraj_gallery.php
+=======
+>>>>>>> 651edf6c355b93a2b550b00626e495a2383737de

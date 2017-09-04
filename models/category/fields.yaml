@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        span: left
+        label: stefan.imageuploadextended::lang.modeldata.name
+        placeholder: stefan.imageuploadextended::lang.modeldata.name_placeholder
+
+    slug:
+        label: stefan.imageuploadextended::lang.modeldata.slug
+        span: right
+        placeholder: stefan.imageuploadextended::lang.modeldata.slug_placeholder
+        preset:
+            field: name
+            type: slug
+    
+    description:
+        label: stefan.imageuploadextended::lang.modeldata.description
+        span: full
+        type: textarea
+        placeholder: stefan.imageuploadextended::lang.modeldata.description_placeholder
